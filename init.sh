@@ -18,6 +18,7 @@ fi
 sudo make clean install;
 
 #determine if i've already paste in initrc
+
 INITRCMARK=$(cat ~/.initrc | grep -o "#DWMMARK");
 if [ "$INITRCMARK" = "#DWMMARK" ]
 then
@@ -26,3 +27,6 @@ else
 	echo "\nPATCHING INITRC\n"
 	cp init/xinitrc ~/.xinitrc
 fi
+
+#launch dwm to test)
+xinit dwm;
