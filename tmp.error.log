@@ -1,0 +1,269 @@
+dwm.c:140:8: error: redefinition of 'struct Monitor'
+  140 | struct Monitor {
+      |        ^~~~~~~
+dwm.c:115:8: note: originally defined here
+  115 | struct Monitor {
+      |        ^~~~~~~
+In file included from config.h:30,
+                 from dwm.c:314:
+flextile.h:4:8: error: redefinition of 'struct Monitor'
+    4 | struct Monitor {
+      |        ^~~~~~~
+dwm.c:140:8: note: originally defined here
+  140 | struct Monitor {
+      |        ^~~~~~~
+In file included from config.h:30,
+                 from dwm.c:314:
+flextile.h: In function 'mirrorlayout':
+flextile.h:42:8: error: 'Monitor' has no member named 'ltaxis'
+   42 |  selmon->ltaxis[0] *= -1;
+      |        ^~
+flextile.h:43:8: error: 'Monitor' has no member named 'ltaxes'
+   43 |  selmon->ltaxes[selmon->curtag][0] = selmon->ltaxis[0];
+      |        ^~
+flextile.h:43:23: error: 'Monitor' has no member named 'curtag'
+   43 |  selmon->ltaxes[selmon->curtag][0] = selmon->ltaxis[0];
+      |                       ^~
+flextile.h:43:44: error: 'Monitor' has no member named 'ltaxis'
+   43 |  selmon->ltaxes[selmon->curtag][0] = selmon->ltaxis[0];
+      |                                            ^~
+flextile.h: In function 'rotatelayoutaxis':
+flextile.h:52:12: error: 'Monitor' has no member named 'ltaxis'
+   52 |   if(selmon->ltaxis[0] > 0)
+      |            ^~
+flextile.h:53:10: error: 'Monitor' has no member named 'ltaxis'
+   53 |    selmon->ltaxis[0] = selmon->ltaxis[0] + 1 > 2 ? 1 : selmon->ltaxis[0] + 1;
+      |          ^~
+flextile.h:53:30: error: 'Monitor' has no member named 'ltaxis'
+   53 |    selmon->ltaxis[0] = selmon->ltaxis[0] + 1 > 2 ? 1 : selmon->ltaxis[0] + 1;
+      |                              ^~
+flextile.h:53:62: error: 'Monitor' has no member named 'ltaxis'
+   53 |    selmon->ltaxis[0] = selmon->ltaxis[0] + 1 > 2 ? 1 : selmon->ltaxis[0] + 1;
+      |                                                              ^~
+flextile.h:55:10: error: 'Monitor' has no member named 'ltaxis'
+   55 |    selmon->ltaxis[0] = selmon->ltaxis[0] - 1 < -2 ? -1 : selmon->ltaxis[0] - 1;
+      |          ^~
+flextile.h:55:30: error: 'Monitor' has no member named 'ltaxis'
+   55 |    selmon->ltaxis[0] = selmon->ltaxis[0] - 1 < -2 ? -1 : selmon->ltaxis[0] - 1;
+      |                              ^~
+flextile.h:55:64: error: 'Monitor' has no member named 'ltaxis'
+   55 |    selmon->ltaxis[0] = selmon->ltaxis[0] - 1 < -2 ? -1 : selmon->ltaxis[0] - 1;
+      |                                                                ^~
+flextile.h:57:9: error: 'Monitor' has no member named 'ltaxis'
+   57 |   selmon->ltaxis[arg->i] = selmon->ltaxis[arg->i] + 1 > 3 ? 1 : selmon->ltaxis[arg->i] + 1;
+      |         ^~
+flextile.h:57:34: error: 'Monitor' has no member named 'ltaxis'
+   57 |   selmon->ltaxis[arg->i] = selmon->ltaxis[arg->i] + 1 > 3 ? 1 : selmon->ltaxis[arg->i] + 1;
+      |                                  ^~
+flextile.h:57:71: error: 'Monitor' has no member named 'ltaxis'
+   57 |   selmon->ltaxis[arg->i] = selmon->ltaxis[arg->i] + 1 > 3 ? 1 : selmon->ltaxis[arg->i] + 1;
+      |                                                                       ^~
+flextile.h:58:8: error: 'Monitor' has no member named 'ltaxes'
+   58 |  selmon->ltaxes[selmon->curtag][arg->i] = selmon->ltaxis[arg->i];
+      |        ^~
+flextile.h:58:23: error: 'Monitor' has no member named 'curtag'
+   58 |  selmon->ltaxes[selmon->curtag][arg->i] = selmon->ltaxis[arg->i];
+      |                       ^~
+flextile.h:58:49: error: 'Monitor' has no member named 'ltaxis'
+   58 |  selmon->ltaxes[selmon->curtag][arg->i] = selmon->ltaxis[arg->i];
+      |                                                 ^~
+flextile.h: In function 'shiftmastersplit':
+flextile.h:68:58: error: 'Monitor' has no member named 'msplit'
+   68 |  if(!arg || !selmon->lt[selmon->sellt]->arrange || selmon->msplit + arg->i < 1 || selmon->msplit + arg->i > n)
+      |                                                          ^~
+flextile.h:68:89: error: 'Monitor' has no member named 'msplit'
+   68 |  if(!arg || !selmon->lt[selmon->sellt]->arrange || selmon->msplit + arg->i < 1 || selmon->msplit + arg->i > n)
+      |                                                                                         ^~
+flextile.h:70:8: error: 'Monitor' has no member named 'msplit'
+   70 |  selmon->msplit += arg->i;
+      |        ^~
+flextile.h:71:8: error: 'Monitor' has no member named 'msplits'
+   71 |  selmon->msplits[selmon->curtag] = selmon->msplit;
+      |        ^~
+flextile.h:71:24: error: 'Monitor' has no member named 'curtag'
+   71 |  selmon->msplits[selmon->curtag] = selmon->msplit;
+      |                        ^~
+flextile.h:71:42: error: 'Monitor' has no member named 'msplit'
+   71 |  selmon->msplits[selmon->curtag] = selmon->msplit;
+      |                                          ^~
+flextile.h: In function 'tile':
+flextile.h:84:6: error: 'Monitor' has no member named 'msplit'
+   84 |  if(m->msplit > n)
+      |      ^~
+flextile.h:85:4: error: 'Monitor' has no member named 'msplit'
+   85 |   m->msplit = (n == 0) ? 1 : n;
+      |    ^~
+flextile.h:87:10: error: 'Monitor' has no member named 'ltaxis'
+   87 |  if(abs(m->ltaxis[0]) == m->ltaxis[1])    /* explicitly: ((abs(m->ltaxis[0]) == 1 && m->ltaxis[1] == 1) || (abs(m->ltaxis[0]) == 2 && m->ltaxis[1] == 2)) */
+      |          ^~
+flextile.h:87:27: error: 'Monitor' has no member named 'ltaxis'
+   87 |  if(abs(m->ltaxis[0]) == m->ltaxis[1])    /* explicitly: ((abs(m->ltaxis[0]) == 1 && m->ltaxis[1] == 1) || (abs(m->ltaxis[0]) == 2 && m->ltaxis[1] == 2)) */
+      |                           ^~
+In file included from config.h:30,
+                 from dwm.c:314:
+flextile.h:89:10: error: 'Monitor' has no member named 'ltaxis'
+   89 |  if(abs(m->ltaxis[0]) == m->ltaxis[2])
+      |          ^~
+flextile.h:89:27: error: 'Monitor' has no member named 'ltaxis'
+   89 |  if(abs(m->ltaxis[0]) == m->ltaxis[2])
+      |                           ^~
+flextile.h:91:6: error: 'Monitor' has no member named 'ltaxis'
+   91 |  if(m->ltaxis[1] == 3)
+      |      ^~
+flextile.h:92:26: error: 'Monitor' has no member named 'msplit'
+   92 |   sym1 = (n == 0) ? 0 : m->msplit;
+      |                          ^~
+flextile.h:93:6: error: 'Monitor' has no member named 'ltaxis'
+   93 |  if(m->ltaxis[2] == 3)
+      |      ^~
+flextile.h:94:30: error: 'Monitor' has no member named 'msplit'
+   94 |   sym3 = (n == 0) ? 0 : n - m->msplit;
+      |                              ^~
+flextile.h:95:6: error: 'Monitor' has no member named 'ltaxis'
+   95 |  if(m->ltaxis[0] < 0) {
+      |      ^~
+flextile.h:101:6: error: 'Monitor' has no member named 'msplit'
+  101 |  if(m->msplit == 1) {
+      |      ^~
+flextile.h:102:7: error: 'Monitor' has no member named 'ltaxis'
+  102 |   if(m->ltaxis[0] > 0)
+      |       ^~
+flextile.h:107:6: error: 'Monitor' has no member named 'msplit'
+  107 |  if(m->msplit > 1 && m->ltaxis[1] == 3 && m->ltaxis[2] == 3)
+      |      ^~
+flextile.h:107:23: error: 'Monitor' has no member named 'ltaxis'
+  107 |  if(m->msplit > 1 && m->ltaxis[1] == 3 && m->ltaxis[2] == 3)
+      |                       ^~
+flextile.h:107:44: error: 'Monitor' has no member named 'ltaxis'
+  107 |  if(m->msplit > 1 && m->ltaxis[1] == 3 && m->ltaxis[2] == 3)
+      |                                            ^~
+flextile.h:109:12: error: 'Monitor' has no member named 'msplit'
+  109 |  else if((m->msplit > 1 && m->ltaxis[1] == 3 && m->ltaxis[0] > 0) || (m->ltaxis[2] == 3 && m->ltaxis[0] < 0))
+      |            ^~
+flextile.h:109:29: error: 'Monitor' has no member named 'ltaxis'
+  109 |  else if((m->msplit > 1 && m->ltaxis[1] == 3 && m->ltaxis[0] > 0) || (m->ltaxis[2] == 3 && m->ltaxis[0] < 0))
+      |                             ^~
+flextile.h:109:50: error: 'Monitor' has no member named 'ltaxis'
+  109 |  else if((m->msplit > 1 && m->ltaxis[1] == 3 && m->ltaxis[0] > 0) || (m->ltaxis[2] == 3 && m->ltaxis[0] < 0))
+      |                                                  ^~
+flextile.h:109:72: error: 'Monitor' has no member named 'ltaxis'
+  109 |  else if((m->msplit > 1 && m->ltaxis[1] == 3 && m->ltaxis[0] > 0) || (m->ltaxis[2] == 3 && m->ltaxis[0] < 0))
+      |                                                                        ^~
+flextile.h:109:93: error: 'Monitor' has no member named 'ltaxis'
+  109 |  else if((m->msplit > 1 && m->ltaxis[1] == 3 && m->ltaxis[0] > 0) || (m->ltaxis[2] == 3 && m->ltaxis[0] < 0))
+      |                                                                                             ^~
+flextile.h:111:12: error: 'Monitor' has no member named 'ltaxis'
+  111 |  else if((m->ltaxis[2] == 3 && m->ltaxis[0] > 0) || (m->msplit > 1 && m->ltaxis[1] == 3 && m->ltaxis[0] < 0))
+      |            ^~
+flextile.h:111:33: error: 'Monitor' has no member named 'ltaxis'
+  111 |  else if((m->ltaxis[2] == 3 && m->ltaxis[0] > 0) || (m->msplit > 1 && m->ltaxis[1] == 3 && m->ltaxis[0] < 0))
+      |                                 ^~
+flextile.h:111:55: error: 'Monitor' has no member named 'msplit'
+  111 |  else if((m->ltaxis[2] == 3 && m->ltaxis[0] > 0) || (m->msplit > 1 && m->ltaxis[1] == 3 && m->ltaxis[0] < 0))
+      |                                                       ^~
+flextile.h:111:72: error: 'Monitor' has no member named 'ltaxis'
+  111 |  else if((m->ltaxis[2] == 3 && m->ltaxis[0] > 0) || (m->msplit > 1 && m->ltaxis[1] == 3 && m->ltaxis[0] < 0))
+      |                                                                        ^~
+flextile.h:111:93: error: 'Monitor' has no member named 'ltaxis'
+  111 |  else if((m->ltaxis[2] == 3 && m->ltaxis[0] > 0) || (m->msplit > 1 && m->ltaxis[1] == 3 && m->ltaxis[0] < 0))
+      |                                                                                             ^~
+flextile.h:118:10: error: 'Monitor' has no member named 'ltaxis'
+  118 |  if(abs(m->ltaxis[0]) == 1 && n > m->msplit) {
+      |          ^~
+flextile.h:118:36: error: 'Monitor' has no member named 'msplit'
+  118 |  if(abs(m->ltaxis[0]) == 1 && n > m->msplit) {
+      |                                    ^~
+flextile.h:121:11: error: 'Monitor' has no member named 'ltaxis'
+  121 |   x1 += (m->ltaxis[0] < 0) ? w2 : 0;
+      |           ^~
+flextile.h:122:11: error: 'Monitor' has no member named 'ltaxis'
+  122 |   x2 += (m->ltaxis[0] < 0) ? 0 : w1;
+      |           ^~
+flextile.h:125:17: error: 'Monitor' has no member named 'ltaxis'
+  125 |  } else if(abs(m->ltaxis[0]) == 2 && n > m->msplit) {
+      |                 ^~
+flextile.h:125:43: error: 'Monitor' has no member named 'msplit'
+  125 |  } else if(abs(m->ltaxis[0]) == 2 && n > m->msplit) {
+      |                                           ^~
+flextile.h:128:11: error: 'Monitor' has no member named 'ltaxis'
+  128 |   y1 += (m->ltaxis[0] < 0) ? h2 : 0;
+      |           ^~
+flextile.h:129:11: error: 'Monitor' has no member named 'ltaxis'
+  129 |   y2 += (m->ltaxis[0] < 0) ? 0 : h1;
+      |           ^~
+flextile.h:134:9: error: 'Monitor' has no member named 'ltaxis'
+  134 |  n1 = (m->ltaxis[1] != 1 || w1 / m->msplit < bh) ? 1 : m->msplit;
+      |         ^~
+flextile.h:134:35: error: 'Monitor' has no member named 'msplit'
+  134 |  n1 = (m->ltaxis[1] != 1 || w1 / m->msplit < bh) ? 1 : m->msplit;
+      |                                   ^~
+flextile.h:134:57: error: 'Monitor' has no member named 'msplit'
+  134 |  n1 = (m->ltaxis[1] != 1 || w1 / m->msplit < bh) ? 1 : m->msplit;
+      |                                                         ^~
+flextile.h:135:9: error: 'Monitor' has no member named 'ltaxis'
+  135 |  n2 = (m->ltaxis[1] != 2 || h1 / m->msplit < bh) ? 1 : m->msplit;
+      |         ^~
+flextile.h:135:35: error: 'Monitor' has no member named 'msplit'
+  135 |  n2 = (m->ltaxis[1] != 2 || h1 / m->msplit < bh) ? 1 : m->msplit;
+      |                                   ^~
+flextile.h:135:57: error: 'Monitor' has no member named 'msplit'
+  135 |  n2 = (m->ltaxis[1] != 2 || h1 / m->msplit < bh) ? 1 : m->msplit;
+      |                                                         ^~
+flextile.h:136:45: error: 'Monitor' has no member named 'msplit'
+  136 |  for(i = 0, c = nexttiled(m->clients); i < m->msplit; c = nexttiled(c->next), i++) {
+      |                                             ^~
+flextile.h:138:6: error: 'Monitor' has no member named 'ltaxis'
+  138 |    (m->ltaxis[1] == 1 && i + 1 == m->msplit) ? X1 - x1 - 2 * c->bw : w1 / n1 - 2 * c->bw,
+      |      ^~
+flextile.h:138:36: error: 'Monitor' has no member named 'msplit'
+  138 |    (m->ltaxis[1] == 1 && i + 1 == m->msplit) ? X1 - x1 - 2 * c->bw : w1 / n1 - 2 * c->bw,
+      |                                    ^~
+flextile.h:139:6: error: 'Monitor' has no member named 'ltaxis'
+  139 |    (m->ltaxis[1] == 2 && i + 1 == m->msplit) ? Y1 - y1 - 2 * c->bw : h1 / n2 - 2 * c->bw, False);
+      |      ^~
+flextile.h:139:36: error: 'Monitor' has no member named 'msplit'
+  139 |    (m->ltaxis[1] == 2 && i + 1 == m->msplit) ? Y1 - y1 - 2 * c->bw : h1 / n2 - 2 * c->bw, False);
+      |                                    ^~
+flextile.h:146:10: error: 'Monitor' has no member named 'msplit'
+  146 |  if(n > m->msplit) {
+      |          ^~
+flextile.h:147:10: error: 'Monitor' has no member named 'ltaxis'
+  147 |   n1 = (m->ltaxis[2] != 1 || w2 / (n - m->msplit) < bh) ? 1 : n - m->msplit;
+      |          ^~
+flextile.h:147:41: error: 'Monitor' has no member named 'msplit'
+  147 |   n1 = (m->ltaxis[2] != 1 || w2 / (n - m->msplit) < bh) ? 1 : n - m->msplit;
+      |                                         ^~
+flextile.h:147:68: error: 'Monitor' has no member named 'msplit'
+  147 |   n1 = (m->ltaxis[2] != 1 || w2 / (n - m->msplit) < bh) ? 1 : n - m->msplit;
+      |                                                                    ^~
+flextile.h:148:10: error: 'Monitor' has no member named 'ltaxis'
+  148 |   n2 = (m->ltaxis[2] != 2 || h2 / (n - m->msplit) < bh) ? 1 : n - m->msplit;
+      |          ^~
+flextile.h:148:41: error: 'Monitor' has no member named 'msplit'
+  148 |   n2 = (m->ltaxis[2] != 2 || h2 / (n - m->msplit) < bh) ? 1 : n - m->msplit;
+      |                                         ^~
+flextile.h:148:68: error: 'Monitor' has no member named 'msplit'
+  148 |   n2 = (m->ltaxis[2] != 2 || h2 / (n - m->msplit) < bh) ? 1 : n - m->msplit;
+      |                                                                    ^~
+flextile.h:151:7: error: 'Monitor' has no member named 'ltaxis'
+  151 |     (m->ltaxis[2] == 1 && i + 1 == n - m->msplit) ? X2 - x2 - 2 * c->bw : w2 / n1 - 2 * c->bw,
+      |       ^~
+flextile.h:151:41: error: 'Monitor' has no member named 'msplit'
+  151 |     (m->ltaxis[2] == 1 && i + 1 == n - m->msplit) ? X2 - x2 - 2 * c->bw : w2 / n1 - 2 * c->bw,
+      |                                         ^~
+flextile.h:152:7: error: 'Monitor' has no member named 'ltaxis'
+  152 |     (m->ltaxis[2] == 2 && i + 1 == n - m->msplit) ? Y2 - y2 - 2 * c->bw : h2 / n2 - 2 * c->bw, False);
+      |       ^~
+flextile.h:152:41: error: 'Monitor' has no member named 'msplit'
+  152 |     (m->ltaxis[2] == 2 && i + 1 == n - m->msplit) ? Y2 - y2 - 2 * c->bw : h2 / n2 - 2 * c->bw, False);
+      |                                         ^~
+dwm.c: At top level:
+dwm.c:1902:1: error: redefinition of 'tile'
+ 1902 | tile(Monitor *m)
+      | ^~~~
+In file included from config.h:30,
+                 from dwm.c:314:
+flextile.h:76:1: note: previous definition of 'tile' was here
+   76 | tile(Monitor *m) {
+      | ^~~~
+make: *** [Makefile:18: dwm.o] Error 1
